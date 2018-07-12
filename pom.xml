@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>eu.els.test</groupId>
+  <artifactId>test-validation-rng-ns</artifactId>
+  <version>1.0.0</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/grammars</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+        <version>1.0.2-beta-1</version>
+        <dependencies>
+          <dependency>
+            <groupId>com.jimetevenard.xml</groupId>
+            <artifactId>intrinsic-jaxp-validator</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <!-- TODO version -->
+          </dependency>
+
+          <!--
+          <dependency>
+            <groupId>com.componentcorp.xml.validation</groupId>
+            <artifactId>jxvc</artifactId>
+            <version>0.9.5-SNAPSHOT</version>
+          </dependency>
+          
+          <dependency>
+            <groupId>com.componentcorp.xml.validation</groupId>
+            <artifactId>base</artifactId>
+            <version>0.9.5-SNAPSHOT</version>
+          </dependency>
+          -->
+
+          <dependency>
+            <groupId>com.componentcorp.xml.validation</groupId>
+            <artifactId>relaxng-compact</artifactId>
+            <version>0.9.5-SNAPSHOT</version>
+          </dependency>
+
+          <dependency>
+            <groupId>com.componentcorp.xml.validation</groupId>
+            <artifactId>relaxng</artifactId>
+            <version>0.9.5-SNAPSHOT</version>
+          </dependency>
+
+        </dependencies>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <validationSets>
+
+            <validationSet>
+              <dir>src/test</dir>
+              <includes>
+                <include>test.xml</include>
+              </includes>
+              <systemId>src/main/grammars/test.rng</systemId>
+              <schemaLanguage>http://relaxng.org/ns/structure/1.0</schemaLanguage>
+            </validationSet>
+            <validationSet>
+              <dir>src/test</dir>
+              <includes>
+                <include>test-rng.xml</include>
+                <include>test-rng-invalid.xml</include>
+              </includes>
+              <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
+            </validationSet>
+
+          </validationSets>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+
+
+
+
+</project>
