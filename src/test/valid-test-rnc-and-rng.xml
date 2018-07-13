@@ -1,6 +1,5 @@
-
-<!--<?xml-model href="../main/grammars/test.rng" schematypens="http://www.iana.org/assignments/media-types/application/relax-ng-compact-syntax"?>-->
 <?xml-model href="../main/grammars/test.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../main/grammars/test.rnc" type="application/relax-ng-compact-syntax" ?>
 <counter xmlns="http://exemple.com/foo/ns">
   <item/>
   <item/>

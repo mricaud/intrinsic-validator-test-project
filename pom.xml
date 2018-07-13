@@ -14,14 +14,8 @@
   </properties>
 
   <build>
-    <resources>
-      <resource>
-        <directory>src/main/grammars</directory>
-      </resource>
-    </resources>
 
     <plugins>
-
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>xml-maven-plugin</artifactId>
@@ -34,30 +28,16 @@
             <!-- TODO version -->
           </dependency>
 
-          <!--
-          <dependency>
-            <groupId>com.componentcorp.xml.validation</groupId>
-            <artifactId>jxvc</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
-          </dependency>
-          
-          <dependency>
-            <groupId>com.componentcorp.xml.validation</groupId>
-            <artifactId>base</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
-          </dependency>
-          -->
-
           <dependency>
             <groupId>com.componentcorp.xml.validation</groupId>
             <artifactId>relaxng-compact</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
+            <version>0.9.4</version>
           </dependency>
 
           <dependency>
             <groupId>com.componentcorp.xml.validation</groupId>
             <artifactId>relaxng</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
+            <version>0.9.4</version>
           </dependency>
 
         </dependencies>
@@ -71,28 +51,23 @@
         </executions>
         <configuration>
           <validationSets>
-
             <validationSet>
               <dir>src/test</dir>
               <includes>
-                <include>test.xml</include>
+                <include>*.xml</include>
               </includes>
-              <systemId>src/main/grammars/test.rng</systemId>
-              <schemaLanguage>http://relaxng.org/ns/structure/1.0</schemaLanguage>
-            </validationSet>
-            <validationSet>
-              <dir>src/test</dir>
-              <includes>
-                <include>test-rng.xml</include>
-                <include>test-rng-invalid.xml</include>
-              </includes>
+              <excludes>
+                <!-- 
+                  Comment the exclude below to see the build fail.
+                -->
+               <exclude>invalid-*.xml</exclude>
+              </excludes>
               <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
             </validationSet>
 
           </validationSets>
         </configuration>
       </plugin>
-
     </plugins>
   </build>
 

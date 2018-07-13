@@ -1,0 +1,7 @@
+<?xml-model href="../main/grammars/test.rnc" type="application/relax-ng-compact-syntax" ?>
+<?xml-model href="../main/grammars/foo.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<counter xmlns="http://exemple.com/foo/ns">
+  <item/>
+  <item/>
+  <item/>
+</counter>

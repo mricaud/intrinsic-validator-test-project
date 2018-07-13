@@ -1,5 +1,5 @@
+namespace foo = "http://exemple.com/foo/ns"
 
-element counter { 
-    
-    element item { empty }*
+element foo:counter { 
+    element foo:item { empty }*
 }
