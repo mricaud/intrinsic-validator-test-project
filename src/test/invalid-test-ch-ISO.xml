@@ -1,0 +1,6 @@
+<?xml-model href="../main/grammars/test-ISO.sch" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<counter xmlns="http://exemple.com/foo/ns">
+  <item/>
+  <item/>
+  <item/>
+</counter>

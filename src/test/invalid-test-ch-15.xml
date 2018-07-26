@@ -1,0 +1,6 @@
+<?xml-model href="../main/grammars/test-1.5.sch" schematypens="http://www.ascc.net/xml/schematron" ?>
+<counter xmlns="http://exemple.com/foo/ns">
+  <item/>
+  <item/>
+  <item/>
+</counter>

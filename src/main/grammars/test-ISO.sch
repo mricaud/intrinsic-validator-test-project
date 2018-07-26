@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron">
+  <title>Test Schematron ISO</title>
   
-  <pattern>
-    <rule context="/*">
-      <assert test="@toto">
-        Root element mus have a toto attribute
-      </assert>
-    </rule>
-  </pattern>
+    <pattern>
+      <rule context="/*">
+        <assert test="@toto"
+          >Schematron ISO : l'élément racine doit avoir un attribut toto</assert>
+          </rule>
+    </pattern>
+    
 </schema>

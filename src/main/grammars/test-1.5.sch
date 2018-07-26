@@ -3,7 +3,7 @@
     <sch:pattern name="toto obligatoire">
         <sch:rule context="/*">
             <sch:assert test="@toto">
-                Root element mus have a toto attribute
+               Schematron 1.5 : déso mais Root element mus have a toto attribute
             </sch:assert>
         </sch:rule>
     </sch:pattern>

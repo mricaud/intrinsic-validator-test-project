@@ -21,6 +21,10 @@
         <artifactId>xml-maven-plugin</artifactId>
         <version>1.0.2-beta-1</version>
         <dependencies>
+          
+          <!--
+            xml-model PI handlin
+          -->
           <dependency>
             <groupId>com.jimetevenard.xml</groupId>
             <artifactId>intrinsic-jaxp-validator</artifactId>
@@ -28,17 +32,32 @@
             <!-- TODO version -->
           </dependency>
 
+          <!--
+            Jing Wrapper : SchemaFactories for :
+            * RelaxNG (XML and Compact syntax)
+            * Schematron (1.5 and ISO) (ISO needs modern Jing and Saxon 9.x)
+            * [TODO] NVDL
+          -->
           <dependency>
-            <groupId>com.componentcorp.xml.validation</groupId>
-            <artifactId>relaxng-compact</artifactId>
-            <version>0.9.4</version>
+            <groupId>Jing-JAXP-Wrapper</groupId>
+            <artifactId>Jing-JAXP-Wrapper</artifactId>
+            <version>1.0-SNAPSHOT</version>
           </dependency>
+          
 
+            <dependency>
+              <groupId>eu.els.oss</groupId>
+              <artifactId>jing</artifactId>
+              <version>20180404</version>
+            </dependency>
+          
           <dependency>
-            <groupId>com.componentcorp.xml.validation</groupId>
-            <artifactId>relaxng</artifactId>
-            <version>0.9.4</version>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+            <version>9.8.0-8</version>
           </dependency>
+          
+          
 
         </dependencies>
         <executions>
@@ -61,6 +80,7 @@
                   Comment the exclude below to see the build fail.
                 -->
                <exclude>invalid-*.xml</exclude>
+                
               </excludes>
               <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
             </validationSet>
