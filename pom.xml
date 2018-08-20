@@ -28,7 +28,7 @@
           <dependency>
             <groupId>com.jimetevenard.xml</groupId>
             <artifactId>intrinsic-jaxp-validator</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.1-SNAPSHOT</version>
             <!-- TODO version -->
           </dependency>
 
@@ -44,13 +44,14 @@
             <version>1.0-SNAPSHOT</version>
           </dependency>
           
-
+            <!-- recent Jing for ISO schematron -->
             <dependency>
               <groupId>eu.els.oss</groupId>
               <artifactId>jing</artifactId>
               <version>20180404</version>
             </dependency>
           
+          <!-- for ISO schematron -->
           <dependency>
             <groupId>net.sf.saxon</groupId>
             <artifactId>Saxon-HE</artifactId>
