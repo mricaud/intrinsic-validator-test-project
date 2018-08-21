@@ -35,7 +35,7 @@
             Jing Wrapper : SchemaFactories for :
             * RelaxNG (XML and Compact syntax)
             * Schematron (1.5 and ISO) (ISO needs modern Jing and Saxon 9.x)
-            * [TODO] NVDL
+            * NVDL
           -->
           <dependency>
             <groupId>com.jimetevenard.xml</groupId>
