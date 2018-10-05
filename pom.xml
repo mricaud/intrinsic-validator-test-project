@@ -64,8 +64,6 @@
             <version>9.8.0-8</version>
           </dependency>
 
-
-
         </dependencies>
         <executions>
           <execution>
@@ -83,16 +81,15 @@
                 <include>*.xml</include>
               </includes>
               <excludes>
-                <!-- 
-                  Comment the <exclude> below to see the build fail.
-                -->
-                <exclude>invalid-*.xml</exclude>
-
+                <!-- Comment the <exclude> below to see the build fail.-->
+                <!--<exclude>invalid-*.xml</exclude>-->
               </excludes>
               <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
             </validationSet>
-
           </validationSets>
+          <catalogs>
+            <catalog>src/main/grammars/with-catalog/catalog.xml</catalog>
+          </catalogs>
         </configuration>
       </plugin>
     </plugins>

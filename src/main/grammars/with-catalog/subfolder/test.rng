@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  
+  <start ns="http://exemple.com/foo/ns">
+    <externalRef href="foo/foo.rng"/>
+  </start>
+  
+</grammar>
