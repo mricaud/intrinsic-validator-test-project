@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  <rewriteURI uriStartString="my-subfolder:/" rewritePrefix="file:/C:/Users/mricaud/_WORK/_github/intrinsic-validator-test-project/src/main/grammars/with-catalog/subfolder/"></rewriteURI>
-  <rewriteSystem systemIdStartString="my-subfolder:/" rewritePrefix="file:/C:/Users/mricaud/_WORK/_github/intrinsic-validator-test-project/src/main/grammars/with-catalog/subfolder/"></rewriteSystem>
-  <!--<rewriteURI uriStartString="els-content:/" rewritePrefix="jar:file:C:\Users\mricaud\.m2\repository\eu\els\sie\models\els-content\1.0.0\els-content-1.0.0.jar!/"></rewriteURI>
-  <rewriteSystem systemIdStartString="els-content:/" rewritePrefix="jar:file:C:\Users\mricaud\.m2\repository\eu\els\sie\models\els-content\1.0.0\els-content-1.0.0.jar!/"></rewriteSystem>-->
+  <rewriteURI uriStartString="my-subfolder:/" rewritePrefix="file:/C:/Users/mricaud/_WORK/_github/intrinsic-validator-test-project.mricaud/src/main/grammars/with-catalog/subfolder/"></rewriteURI>
+  <rewriteSystem systemIdStartString="my-subfolder:/" rewritePrefix="file:/C:/Users/mricaud/_WORK/_github/intrinsic-validator-test-project.mricaud/src/main/grammars/with-catalog/subfolder/"></rewriteSystem>
 </catalog>
