@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0">
+  
+  <namespace ns="http://exemple.com/counter">
+    <validate schema="jar0:/test.rng"/>
+  </namespace>
+  
+  <!--<namespace ns="http://exemple.com/counter">
+    <validate schema="jar1:/test.rng"/>
+  </namespace>-->
+  
+  <!--<namespace ns="http://exemple.com/counter">
+    <validate schema="jar2:/test/test/test.rng"/>
+  </namespace>-->
+  
+  <!--<namespace ns="http://exemple.com/counter">
+    <validate schema="jar3:/test/test/test.rng"/>
+  </namespace>-->
+  
+</rules>

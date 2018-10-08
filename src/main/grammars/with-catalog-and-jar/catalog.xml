@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  
+  <rewriteURI uriStartString="jar0:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar0.jar!/"/>
+  <rewriteSystem systemIdStartString="jar0:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar0.jar!/"/>
+  
+  <rewriteURI uriStartString="jar1:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar1.jar!/"/>
+  <rewriteSystem systemIdStartString="jar1:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar1.jar!/"/>
+  
+  <rewriteURI uriStartString="jar2:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar2.jar!/"/>
+  <rewriteSystem systemIdStartString="jar2:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar2.jar!/"/>
+  
+  <rewriteURI uriStartString="jar3:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar3.jar!/"/>
+  <rewriteSystem systemIdStartString="jar3:/" rewritePrefix="jar:file:C:\Users\mricaud\_WORK\_github\intrinsic-validator-test-project.mricaud\src\main\grammars\with-catalog-and-jar\jar3.jar!/"/>
+  
+  
+</catalog>

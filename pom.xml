@@ -78,7 +78,7 @@
             <validationSet>
               <dir>src/test</dir>
               <includes>
-                <include>*.xml</include>
+                <include>invalid-test-nvdl-with-catalog-and-jar.xml</include>
               </includes>
               <excludes>
                 <!-- Comment the <exclude> below to see the build fail.-->

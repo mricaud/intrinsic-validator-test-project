@@ -1,0 +1,14 @@
+<?xml-model href="../main/grammars/with-catalog-and-jar/test.nvdl" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0" ?>
+<f:trucs xmlns:f="http://exemple.com/foo" xmlns:c="http://exemple.com/counter">
+    
+    <f:bidule millesime="1991">
+        Salut, Biloute !
+    </f:bidule>
+    
+    <c:counter>
+        <c:item/>
+    </c:counter><c:counter>
+        <c:item/>toto<c:item/>
+        <c:item/>
+    </c:counter>
+</f:trucs>
